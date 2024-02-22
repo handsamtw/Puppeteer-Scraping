@@ -38,7 +38,6 @@ async function scrapePage(browser, searchQuery, pageNum) {
         {const text = element.textContent.trim()
             const matches = text.match(/\d+/); 
             return matches ? parseInt(matches[0]) : text;
-        
         }
         )
     );
